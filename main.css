@@ -1,0 +1,482 @@
+/*navigation bar*/
+#header{
+  background: #041322;
+  color: white;
+  padding: 1.5rem;
+  position: fixed;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  z-index: 100;
+}
+#header a{
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 0.4rem 1rem;
+}
+#header a:hover{
+  background: #005577;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.logo-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-link{
+  margin: 0 1rem;
+}
+#nav-bar ul{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+#nav-bar ul li{
+  display: inline-block;
+}
+#header-img{
+  width: 4rem;
+}
+main{
+  padding-top: 5.5rem;
+}
+@media(max-width: 500px){
+  main{
+    padding-top: 6.8rem;
+  }
+
+}
+
+/*below i'm working on the slider*/
+.slider{
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+.slider ul{
+  display: flex;
+  padding: 0px;
+  width: 300%;
+  animation-name: slider;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  border-style: double;
+  border-color: #041321;
+  border-width: 0 0 5px 0;
+
+}
+@keyframes slider {
+  0% {margin-left: 0;}
+  25% {margin-left: 0;}
+  35% {margin-left: -100%;}
+  60% {margin-left: -100%;}
+  70% {margin-left: -200%;}
+  100% {margin-left: -200%;}
+}
+.slider li{
+  list-style: none;
+  width: 100%;
+}
+.slider img{
+  width: 100%;
+  height: 100%;
+}
+.slider img:hover{
+  filter: contrast(90%);}
+
+  /*services*/
+
+  #services{
+    width: 100%;
+    padding: 3rem 0;
+    color: #fff;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    grid-template-areas:
+    "internet tv telephony";
+  }
+  #services p{
+    padding-bottom: 20px;
+  }
+  #services h2{
+    font-size:
+  }
+  #services img{
+    width: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #internet{
+    grid-area: internet;
+    height: auto;
+    position: relative;
+  }
+  #tv{
+    grid-area: tv;
+    height: auto;
+    position: relative;
+  }
+  #telephony{
+    grid-area: telephony;
+    height: auto;
+    position: relative;
+  }
+
+  .learnmore{
+    text-decoration: none;
+    color: white;
+    background-color: #041322;
+    padding: 0.2rem 1rem;
+    border-radius: 20px;
+    width: 20rem;
+  }
+  .learnmore:hover{
+    background: #005577;
+    transition: 0.5s;
+  }
+  .button{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  @media(max-width: 500px){
+    #services{
+      width: 80%;
+      margin: auto;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+      "internet"
+      "tv"
+      "telephony"
+    }
+    .learnmore{
+      padding: 0.4rem 2rem
+    }
+    #services img{
+      width: 40%;
+    }
+  }
+
+  /* below iframe*/
+
+  .videoyt{
+    position: relative;
+    margin-top: 2rem;
+    padding-bottom: 56.25%;
+    height: 0;
+
+  }
+  .videoyt iframe{
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-style: double;
+    border-width: 5px;
+    border-color: #041322;
+  }
+
+  /*product description*/
+
+  .descriptionl{
+    padding-top: 5rem;
+    display: flex;
+    position: relative;
+    color: #fff;
+  }
+  .descriptionl div{
+    flex: 1;
+    align-self: center;
+  }
+  .descriptionl h2{
+    text-align: justify;
+    padding: 0 2rem;
+    font-size: 2rem;
+  }
+  .descriptionl p{
+    text-align: justify;
+    padding: 0 2rem;
+  }
+  .descriptionl img{
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media (max-width: 500px){
+    .descriptionl{
+      flex-direction: column-reverse;
+    }
+    .descriptionl h2, p{
+      text-align: center;
+    }
+  }
+
+
+  .descriptionr{
+    padding-top: 5rem;
+    display: flex;
+    position: relative;
+    color: #fff;
+  }
+  .descriptionr div{
+    flex: 1;
+    align-self: center;
+  }
+  .descriptionr h2{
+    text-align: justify;
+    padding: 0 2rem;
+    font-size: 2rem;
+  }
+  .descriptionr p{
+    text-align: justify;
+    padding: 0 2rem;
+  }
+  .descriptionr img{
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media (max-width: 500px){
+    .descriptionr{
+      flex-direction: column;
+    }
+    .descriptionr h2, p{
+      text-align: center;
+    }
+  }
+  .descriptionbuttons{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    color: white;
+    background-color: #041322;
+    padding: 0.6rem 2rem;
+    border-radius: 20px;
+    width: 7rem;
+    text-align: center;
+  }
+  .descriptionbuttons:hover{
+    background: #005577;
+    transition: 0.5s;
+  }
+
+  /*product prices*/
+
+  .price{
+    width: 100%;
+    color: #fff;
+    text-shadow: 2px -1px #000;
+    font-family: sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "gold silver bronze";
+  }
+  .gold{
+    grid-area: gold;
+  }
+  .silver{
+    grid-area: silver;
+  }
+  .bronze{
+    grid-area: bronze;
+  }
+  .price ul{
+    list-style: none;
+    padding: 0px;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .price div{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #070547;
+    margin: 1rem;
+    padding: 0px;
+    text-align: center;
+  }
+  .price h2{
+    background-color: #041322;
+    margin: 0px;
+    font-size: 2rem;
+    padding: 0.5rem;
+    color: white;
+  }
+  .price a{
+    display: block;
+    margin: 0.7rem auto;
+    text-decoration: none;
+    color: white;
+    background-color: #041322;
+    padding: 0.2rem 1rem;
+    border-radius: 20px;
+    width: 7rem;
+    text-align: center;
+  }
+  .price a:hover{
+    background: #005577;
+    transition: 0.5s;
+  }
+  @media (max-width: 500px){
+    .price{
+      grid-template-columns: 1fr;
+      grid-template-areas:
+      "gold"
+      "silver"
+      "bronze";
+    }
+
+  }
+
+  /*Form*/
+
+  #form{
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  #form p{
+    text-align: center;
+  }
+  #name, #email{
+    width: 50%;
+    padding: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  #submit{
+    width: 10rem;
+    padding: 0.5rem;
+    background-color: #041322;
+    color: white;
+    border-radius: 10px;
+  }
+  #submit:hover{
+    background: #005577;
+    transition: 0.5s;
+  }
+
+  /*FOOTER*/
+  footer{
+    background-color: #041322;
+    margin: 1rem auto;
+  }
+  #footer{
+    width: 100%;
+    height: auto;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "phones products services customers social";
+  }
+  @media (max-width: 500px){
+    #footer{
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      grid-template-areas:
+      "phones"
+      "products"
+      "services"
+      "customers"
+      "social";
+      text-align: center;
+    }
+    #footer ul{
+      padding-left: 0px;
+    }
+    #copyright{
+      text-align: left;
+    }
+    #copyright ul{
+      padding: 0px;
+    }
+    #copyright a{
+      padding: 0px;
+      margin: 0px;
+    }
+  }
+  #footer li{
+    list-style: none;
+    padding: 0.5rem 0px;
+  }
+  #footer a{
+    text-decoration: none;
+    color: white;
+    padding: 0.3rem;
+  }
+  #footer a:hover{
+    background: #005577;
+    transition: 0.5s;
+    border-radius: 10px;
+  }
+  #footer h4{
+    color: #166BBA;
+  }
+  .phones{
+    grid-area: phones;
+  }
+  .phones img{
+    width: 4rem;
+  }
+  .products{
+    grid-area: products;
+  }
+  .services{
+    grid-area: services;
+  }
+  .customers{
+    grid-area: customers;
+  }
+  .social{
+    grid-area: social;
+  }
+  .social img{
+    width: 2.5rem;
+  }
+
+#copyright{
+color: white;
+}
+#copyright a{
+text-decoration: none;
+color: white;
+margin: 0 3rem 0 0;
+padding: 0.2rem 0.2rem;
+}
+#copyright li{
+  list-style: none;
+  display: inline-block;
+}
+#copyright a:hover{
+  background: #005577;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+
+/*font-size font-family background*/
+
+p{
+font-family: sans-serif;
+line-height: 2rem;
+font-size: 1.2rem;
+}
+body{
+  background: linear-gradient(180deg, #166BBA, #1C88ED, #fff);
+  text-shadow: 2px 1px rgba(0,0,0,0.3);
+  margin: 0;
+}
